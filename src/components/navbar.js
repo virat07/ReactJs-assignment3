@@ -25,9 +25,7 @@ class NavBar extends Component {
                     <h2>Category</h2>
                 </div>
             </div>
-            <div>
-                 {this.props.id}
-;            </div>
+           
             </div>
             </div>
 
