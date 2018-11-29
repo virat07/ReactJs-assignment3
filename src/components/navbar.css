@@ -1,20 +1,27 @@
-.parent-container
-{
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("library3.png"); */
+    background-color: white;
+
+
+}
+.parent-container{
 	width:80%;
-    margin:0 auto;   
+    margin:0 auto;
+   
 	display:block;
 }
 
-.left-container
-{
+.left-container{
     width:25%; 
 	margin:auto;
     display:block;
     float:left;
 }
 
-.right-container
-{
+.right-container{
     width:65%;
 	margin:auto;
     display:block;
@@ -39,15 +46,13 @@
     padding-bottom: 5px;
     padding-top: 5px;
 }
-#base .row 
- {
-     background-color:red ; 
+.row  {
+     
      border-bottom: 1px solid black;
-     color:wheat;
+            
     }
 
-ul
-{
+ul{
     list-style-type: none;
     padding-top: 55px;
 }
@@ -56,8 +61,7 @@ ul
     font-size:23px;
     padding-bottom: 22px;
 }
-.List li:hover
-{
+.List li:hover{
     background-color:red;
     color:white;
     cursor:pointer;
