@@ -9,29 +9,14 @@ class NavBar extends Component {
         super(props);
 
     }
-    render(){
+    render(){   
+        
         
          let Detailed  = this.props.updates
-         {console.log(Detailed)}
+       
          
          
-         
-        // function Books(props){
-        //         book = Detailed.map((Detailed)=>
-        //             <div className="row">
-        //                 <div className="column-1">
-        //                     {Detailed.name}
-        //                 </div>
-        //                 <div className="column-1">
-        //                     {Detailed.description}
-        //                 </div>
-        //                 <div className="column-1">
-        //                     {Detailed.category}
-        //                 </div>
-
-        //             </div>
-        //         )
-        // }
+   
         return(
             <div className='parent-container'>
                     
@@ -49,7 +34,7 @@ class NavBar extends Component {
          
 
             
-            {Detailed.map(Detailed=><div className='row'>
+            {Detailed.map(Detailed=><div className='row' key={Detailed.name}>
             <div className='column'>{Detailed.name}</div>
             <div className='column'>{Detailed.description}</div>
             <div className = 'column'>{Detailed.category} </div>               

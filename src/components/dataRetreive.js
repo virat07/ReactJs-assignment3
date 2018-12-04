@@ -22,8 +22,13 @@
      
     handleDisplay(e){
             console.log(e.target.id)
+            if(e.target.id === 'All'){
+                this.props.ParentMethod(this.state.suggest)
+            }
+            else{
             let user = this.state.suggest[e.target.id];
             this.props.ParentMethod(user);
+            }   
                       
         }
 
@@ -41,7 +46,7 @@
                     return resp.json()
                 })
                 .then((resp)=>{
-                    console.log(resp);
+                    
                     this.setState({suggest:resp.books})
                     this.setState({category:resp.Category})
                     
@@ -60,7 +65,7 @@
                 <ul  className='List' id="List" onClick={this.handleDisplay.bind(this)}> 
                 
                     {category ? Object.keys(category).map((key)=>{
-                        return <li id={key}>{category[key]}
+                        return <li  key ={key} id={key}>{category[key]}
                         </li>
                     }): ''}
                 </ul>

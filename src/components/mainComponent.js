@@ -7,13 +7,13 @@ class DisplayComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            loader: true,
+        
             updates:[]
         }
         this.detailedList = this.detailedList.bind(this)
     }
     detailedList(users) {
-          
+
             let newArray =Object.values(users)
             this.setState({updates:newArray})
             
